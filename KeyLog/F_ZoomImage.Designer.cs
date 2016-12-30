@@ -1,4 +1,4 @@
-﻿namespace Coque_PropositionCommerciale
+﻿namespace KeyLog
 {
     partial class F_ZoomImage
     {

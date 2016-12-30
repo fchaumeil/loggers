@@ -1,6 +1,6 @@
 ﻿namespace Coque_PropositionCommerciale
 {
-    partial class F_PDFviewer
+    /*partial class F_PDFviewer
     {
         /// <summary>
         /// Required designer variable.
@@ -95,4 +95,5 @@
         private System.Windows.Forms.Button bt_savePDF;
         private GrapeCity.ActiveReports.Viewer.Win.Viewer PDFviewer;
     }
+    */
 }

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Coque_PropositionCommerciale
+namespace KeyLog
 {
     public partial class F_ZoomImage : Form
     {
